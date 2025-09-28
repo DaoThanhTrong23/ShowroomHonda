@@ -1,0 +1,141 @@
+﻿@model IEnumerable<ShowroomHonda.Models.THONGSOKYTHUAT>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.KhoiLuongKho)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DaiRongCao)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.KhoangCachTruc)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DoCaoYen)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.KhoangSangGam)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DungTichBinhXang)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.KichCoLopTruoc)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.KichCoLopSau)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PhuocTruoc)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PhuocSau)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LoaiDongCo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CongXuatToiDa)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DungTichNhot)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MucTieuThu)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LoaiTruyenDong)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HeThongKhoiDong)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MomenCucDai)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DungTichXiLanh)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DuongKinhHanhTrinhPiston)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TiSoNen)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.KhoiLuongKho)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DaiRongCao)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.KhoangCachTruc)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DoCaoYen)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.KhoangSangGam)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DungTichBinhXang)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.KichCoLopTruoc)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.KichCoLopSau)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PhuocTruoc)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PhuocSau)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LoaiDongCo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CongXuatToiDa)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DungTichNhot)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MucTieuThu)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LoaiTruyenDong)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.HeThongKhoiDong)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MomenCucDai)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DungTichXiLanh)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DuongKinhHanhTrinhPiston)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TiSoNen)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.MaKT }) |
+            @Html.ActionLink("Details", "Details", new { id=item.MaKT }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.MaKT })
+        </td>
+    </tr>
+}
+
+</table>

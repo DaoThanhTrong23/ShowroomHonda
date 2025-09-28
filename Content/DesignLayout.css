@@ -1,0 +1,120 @@
+﻿body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f8f9fa;
+}
+
+.navbar {
+    background-color: #222;
+}
+
+.navbar-brand img {
+    height: 45px;
+}
+
+.nav-link {
+    color: white !important;
+    font-weight: 500;
+}
+
+    .nav-link:hover {
+        color: #ffd700 !important;
+    }
+
+.banner {
+    background: url('/Content/Images/honda-banner.jpg') center/ cover no-repeat;
+    height: 350px;
+    position: relative;
+}
+
+.banner-text {
+    position: absolute;
+    bottom: 30px;
+    left: 50px;
+    color: white;
+    background: rgba(0,0,0,0);
+    padding: 15px 25px;
+    border-radius: 10px;
+}
+
+footer {
+    background: #222;
+    color: #ddd;
+    padding: 30px 0;
+}
+
+    footer a {
+        color: #bbb;
+        text-decoration: none;
+    }
+
+        footer a:hover {
+            color: white;
+        }
+
+.SLGioHang {
+    background-color: red;
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
+    position:absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    margin-top: -15px;
+    margin-left: 10px;
+}
+.navbar-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+    .navbar-icons li {
+        position: relative;
+        margin-left: 20px;
+    }
+
+        .navbar-icons li a {
+            color: white;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+
+.container_account {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    min-width: 150px;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    padding: 0;
+    margin: 0;
+    z-index: 1000;
+    list-style-type: none;
+}
+
+    .container_account li {
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+    }
+
+        .container_account li:last-child {
+            border-bottom: none;
+        }
+
+        .container_account li a {
+            color: black;
+            text-decoration: none;
+            display: block;
+        }
+
+.user-dropdown:hover .container_account {
+    display: block;
+}
