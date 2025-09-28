@@ -16,8 +16,8 @@
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark shadow">
-        <div class="container">
+    <header class="w-100">
+        <div class="container w-100 d-flex justify-content-between align-items-center">
             <a class="navbar-brand" href="@Url.Action("Index", "Home")">
                 <img src="~/Content/Images/logo_honda.png" />
             </a>
@@ -39,34 +39,33 @@
                     </ul>
                 </li>
             </ul>
-
-
-            @*<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="@Url.Action("Index", "Home")">Trang chủ</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="@Url.Action("SanPham", "Xe")">Sản phẩm</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="@Url.Action("KhuyenMai", "Home")">Khuyến mãi</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="@Url.Action("About", "Home")">Giới thiệu</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="@Url.Action("Contact", "Home")">Liên hệ</a>
-                </li>
-            </ul>
-        </div>*@
         </div>
+    </header>
+    <nav class="container">
+        <ul class="d-flex w-100 justify-content-around align-items-center p-1 mt-1" style="color: white; list-style-type: none; background-color: #222; border-radius: 40px;">
+            <li>
+                <a class="nav-link" href="@Url.Action("Index", "Home")">Trang chủ</a>
+            </li>
+            <li>
+                <a class="nav-link" href="@Url.Action("SanPham", "Xe")">Sản phẩm</a>
+
+            </li>
+            <li>
+                <a class="nav-link" href="@Url.Action("KhuyenMai", "Home")">Khuyến mãi</a>
+            </li>
+            <li>
+                <a class="nav-link" href="@Url.Action("About", "Home")">Giới thiệu</a>
+
+            </li>
+            <li>
+                <a class="nav-link" href="@Url.Action("Contact", "Home")">Liên hệ</a>
+            </li>
+
+
+            <!--Sau này thêm các chức năng cho manager và nhân viên-->
+        </ul>
     </nav>
 
-    
 
     <main class="container my-5">
         @RenderBody()

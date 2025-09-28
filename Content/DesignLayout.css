@@ -3,38 +3,31 @@
     background-color: #f8f9fa;
 }
 
-.navbar {
+header
+{
+    display: flex;
+    align-items: center;
     background-color: #222;
+    padding: 15px 0;
+}
+nav li{
+    width: 100%;
+    //background-color: yellow;
+    border-radius: 20px;
+    text-align: center;
+    padding: 5px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+nav li:hover {
+    background-color: whitesmoke;
+    color: black;
+}
+.container img
+{
+    width: 500px;
 }
 
-.navbar-brand img {
-    height: 45px;
-}
-
-.nav-link {
-    color: white !important;
-    font-weight: 500;
-}
-
-    .nav-link:hover {
-        color: #ffd700 !important;
-    }
-
-.banner {
-    background: url('/Content/Images/honda-banner.jpg') center/ cover no-repeat;
-    height: 350px;
-    position: relative;
-}
-
-.banner-text {
-    position: absolute;
-    bottom: 30px;
-    left: 50px;
-    color: white;
-    background: rgba(0,0,0,0);
-    padding: 15px 25px;
-    border-radius: 10px;
-}
 
 footer {
     background: #222;
@@ -115,6 +108,10 @@ footer {
             display: block;
         }
 
+        .container_account li a:hover 
+        {
+            color: blue;
+        }
 .user-dropdown:hover .container_account {
     display: block;
 }
